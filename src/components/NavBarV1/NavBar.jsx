@@ -1,7 +1,5 @@
 import React from 'react'
-import { Container, Form, Nav, Navbar, Button } from 'react-bootstrap';
-import '/Users/WINDOWS 10/Desktop/sistemaCreditoPersonal/sistema-Credito-Personal/src/components/HomeV1/HomeV1.css'
-
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 
 const NavBar = () => {

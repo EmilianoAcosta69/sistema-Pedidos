@@ -487,6 +487,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import DeleteIcon from '@mui/icons-material/Delete';
+import './Pedido.css';
 
 const Pedido = () => {
     // Definir el menú con las comidas y extras disponibles

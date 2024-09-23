@@ -1,31 +1,32 @@
-import './App.css';
-import PedidoForm from './components/PedidoFormV1/PedidoForm';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Pedido from './components/PedidoFormV1/Pedido';
 import NavBar from './components/NavBarV1/NavBar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import VerPedidoPage from './pages/VerPedidoPage';
-import { useState } from 'react';
-import { PedidosFinalizados } from './pages/PedidosFinalizados';
+import PedidosFinalizados from './pages/PedidosFinalizados';
+
+import './App.css'
 
 function App() {
-  // Estado global para los pedidos
   const [pedidos, setPedidos] = useState([]);
-
-  // Función para agregar pedidos confirmados
   const confirmarPedido = (pedido) => {
     setPedidos([...pedidos, pedido]);
   };
 
   return (
     <>
+    <BrowserRouter>
       <NavBar />
-      <Router>
+      
         <Routes>
-          <Route path="/" element={<PedidoForm confirmarPedido={confirmarPedido} />}/>
+          <Route path="/" element={<Pedido confirmarPedido={confirmarPedido} />}/>
           <Route path="/pedidos" element={<VerPedidoPage pedidos={pedidos} />}/>
           <Route path="/pedidosFinalizados" element={<PedidosFinalizados pedidos={pedidos} />}/>
 
         </Routes>
-      </Router>
+  
+      </BrowserRouter>
     </>
   );
 }

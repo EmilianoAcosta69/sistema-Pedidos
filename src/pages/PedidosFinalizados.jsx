@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Container } from 'react-bootstrap';
 
-export const PedidosFinalizados = () => {
+
+const PedidosFinalizados = () => {
     const [pedidosListos, setPedidosListos] = useState([]);
 
     useEffect(() => {
@@ -78,3 +79,5 @@ export const PedidosFinalizados = () => {
         </Container>
     );
 };
+
+export default PedidosFinalizados;
