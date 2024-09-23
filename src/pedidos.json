@@ -1,0 +1,87 @@
+{
+    "nombre": "Juan Pérez",
+    "direccion": "Calle Falsa 123",
+    "comidas": [
+        {
+            "comida": "sanguche",
+            "cantidad": 2,
+            "precio": 2000,
+            "extras": {
+                "mayonesa": false,
+                "ketchup": false,
+                "lechuga": false,
+                "tomate": false,
+                "cebolla": false,
+                "aji": false,
+                "completoSinAji": false,
+                "completoConAji": false,
+                "verduraMayonesa": false,
+                "verduraSavora": false,
+                "verdura": false,
+                "soloAderezos": false
+            }
+        },
+        {
+            "comida": "napolitana",
+            "cantidad": 1,
+            "precio": 2000,
+            "optionNapolitana": {
+                "sinSalsa": true,
+                "sinJamon": false
+            }
+        },
+        {
+            "comida": "suprema",
+            "cantidad": 1,
+            "precio": 2000,
+            "optionNapolitana": {
+                "sinSalsa": true,
+                "sinJamon": false
+            }
+        },
+        {
+            "comida": "pizza",
+            "cantidad": 1,
+            "precio": 2000,
+            "optionPizza": {
+                "comun": false,
+                "especial": false,
+                "fugazetta": false,
+                "napolitana": false,
+                "ternera": false,
+                "calabresa": false
+            }
+        },
+        {
+            "comida": "hamburguesa",
+            "cantidad": 1,
+            "precio": 2000,
+            "extras": {
+                "mayonesa": false,
+                "ketchup": false,
+                "lechuga": false,
+                "tomate": false,
+                "cebolla": false,
+                "aji": false,
+                "completoSinAji": false,
+                "completoConAji": false,
+                "verduraMayonesa": false,
+                "verduraSavora": false,
+                "verdura": false,
+                "soloAderezos": false
+            }
+        },
+        {
+            "comida": "papas",
+            "cantidad": 1,
+            "precio": 2000
+            
+        },
+        {
+            "comida": "papasGratinadas",
+            "cantidad": 1,
+            "precio": 2000
+            
+        }
+    ]
+}
