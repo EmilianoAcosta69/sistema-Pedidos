@@ -14,10 +14,7 @@ const NavBar = () => {
                         className="my-2 my-lg-0 "
                         navbarScroll
                     >
-                        
-                        
                     </Nav>
-                    
                     <Nav
                         className="my-2 my-lg-0 ms-auto"
                         navbarScroll
