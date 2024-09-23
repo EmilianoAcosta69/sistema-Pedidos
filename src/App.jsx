@@ -62,7 +62,7 @@ function App() {
     setPedidos([...pedidos, pedido]);
   };
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <Pedido confirmarPedido={confirmarPedido} />,
